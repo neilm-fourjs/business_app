@@ -1,0 +1,5 @@
+<ReportDataSample>
+    <report name="rpt">
+        <sample path="Report.FirstPageHeader.m_logo" value="../pics/njm_demo_icon.png"/>
+    </report>
+</ReportDataSample>
