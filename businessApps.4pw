@@ -70,18 +70,20 @@
       <File filePath="src/app_lib.4gl"/>
       <File filePath="src/combos.4gl"/>
     </Library>
-    <Application binaryName="cust_mnt" commandLineArguments="S 1" dependencies="-400184264,1986,-1090563702,-310428106,1136561508_14000" id="-1273407208" label="cust_mnt">
+    <Application binaryName="cust_mnt" commandLineArguments="S 1" dependencies="-400184264,1986,-1090563702,-310428106,1136561508_14000,56861080,344479388_897794002" id="-1273407208" label="cust_mnt">
       <File filePath="src/cust_mnt.4fd"/>
       <File filePath="src/cust_mnt.4gl"/>
     </Application>
-    <Application binaryName="dm_stock" commandLineArguments="S 1" dependencies="-1557891896,-310428106,-1090563702,1136561508_14000,631779877" id="476951290" label="dm_stock">
+    <Application binaryName="dm_stock" commandLineArguments="S 1" dependencies="-1557891896,-310428106,-1090563702,1136561508_14000,631779877,344479388_1422201568,56861080,344479388_897794002" id="476951290" label="dm_stock">
       <File filePath="src/dm_stock.4gl"/>
     </Application>
-    <Library binaryName="oe_lib" dependencies="-400184264,1986,-310428106,1136561508_14000,529675466_1986" id="-272766546" label="oe_lib">
-      <VirtualFolder label="etc">
-        <File filePath="etc/weboe.4ad"/>
-        <File filePath="etc/weboe.4st"/>
-      </VirtualFolder>
+    <Library binaryName="etc" id="56861080" label="etc">
+      <File filePath="etc/default.4ad"/>
+      <File filePath="etc/default.4st"/>
+      <File filePath="etc/weboe.4ad"/>
+      <File filePath="etc/weboe.4st"/>
+    </Library>
+    <Library binaryName="oe_lib" dependencies="-400184264,1986,-310428106,1136561508_14000,529675466_1986,56861080" id="-272766546" label="oe_lib">
       <File filePath="src/getcust.per"/>
       <File filePath="src/getorder.per"/>
       <File filePath="src/getstock.per"/>
@@ -110,16 +112,17 @@
       </VirtualFolder>
       <File filePath="src/printInvoices.4gl"/>
     </Application>
-    <Application binaryName="webOE" dependencies="-272766546,-1090563702,-400184264,1986,-310428106,1136561508_14000" id="-559263813" label="webOE">
+    <Application binaryName="webOE" dependencies="-272766546,-1090563702,-400184264,1986,-310428106,1136561508_14000,56861080" id="-559263813" label="webOE">
       <File filePath="src/webOE.4gl"/>
       <File filePath="src/webOE.per"/>
     </Application>
-    <Application binaryName="webOE2" dependencies="-272766546,-1090563702,1986,-310428106,1136561508_14000" id="2103145373" label="webOE2">
+    <Application binaryName="webOE2" dependencies="-272766546,-1090563702,1986,-310428106,1136561508_14000,56861080" id="2103145373" label="webOE2">
       <File filePath="src/webOE2.4gl"/>
       <File filePath="src/webOE2.per"/>
     </Application>
   </Group>
   <Group id="-1682807944" label="External" language="Genero">
+    <ExtProject filePath="../dynMaint/dynMaint.4pw" id="344479388"/>
     <ExtProject filePath="../g2_lib/g2_lib.4pw" id="1208497509"/>
     <ExtProject filePath="../njm_demo_db/njm_demo_db.4pw" id="529675466"/>
   </Group>

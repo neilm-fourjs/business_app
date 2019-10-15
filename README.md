@@ -1,18 +1,17 @@
-# My Genero Widget Demo
-You can build using the GeneroStudio project file widgets.4pw
+# Business Application Demos
+You can build using the GeneroStudio project file businessApp.4pw
 
-This demos also uses the g2_lib for the library code, so make sure to also check that out.
+This demos also uses the g2_lib, njm_demo_db and dynMaint for the database and library code, so make sure to also check that out.
 
-On Linux you can use the makefile to build and run using the widgets.4pw
-
-![screenshot_20181109_151528](https://user-images.githubusercontent.com/16427457/48267337-62176c00-e432-11e8-994f-919206e5a433.png)
-
+On Linux you can use the makefile to build and run using the businessApp.4pw
 
 # Building:
 Set the Genero Environment then:
 ```
 git clone git@github.com:neilm-fourjs/g2_lib.git
-git clone git@github.com:neilm-fourjs/widgets.git
-cd widgets/
+git clone git@github.com:neilm-fourjs/njm_demo_db.git
+git clone git@github.com:neilm-fourjs/dynMaint.git
+git clone git@github.com:neilm-fourjs/business_app.git
+cd business_app/
 make run
 ```
