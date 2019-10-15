@@ -1,9 +1,7 @@
 # Business Application Demos
-You can build using the GeneroStudio project file businessApp.4pw
-
 This demos also uses the g2_lib, njm_demo_db and dynMaint for the database and library code, so make sure to also check that out.
 
-On Linux you can use the makefile to build and run using the businessApp.4pw
+You can build using the GeneroStudio project file or on Linux you can use the makefile ( which will use the GeneroStudio project file )
 
 # Building:
 Set the Genero Environment then:
